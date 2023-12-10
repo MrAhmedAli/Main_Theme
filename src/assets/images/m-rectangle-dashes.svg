@@ -1,0 +1,14 @@
+<svg width="310" height="280" viewBox="0 0 310 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.5" y="0.5" width="309" height="279" rx="9.5" stroke="#3AC2CB" stroke-dasharray="10 10"/>
+  <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg" x="135" y="40"> <!-- Adjusted x and y positions -->
+    <g id="vuesax/linear/gallery-add">
+      <g id="gallery-add">
+        <path id="Vector" d="M19.8757 22.0833C22.3149 22.0833 24.2923 20.1059 24.2923 17.6667C24.2923 15.2274 22.3149 13.25 19.8757 13.25C17.4364 13.25 15.459 15.2274 15.459 17.6667C15.459 20.1059 17.4364 22.0833 19.8757 22.0833Z" stroke="#A4B4CB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path id="Vector_2" d="M28.7077 4.41675H19.8744C8.83268 4.41675 4.41602 8.83342 4.41602 19.8751V33.1251C4.41602 44.1668 8.83268 48.5834 19.8744 48.5834H33.1244C44.166 48.5834 48.5827 44.1668 48.5827 33.1251V22.0834" stroke="#A4B4CB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path id="Vector_3" d="M34.7812 11.0417H46.9271" stroke="#A4B4CB" stroke-width="1.5" stroke-linecap="round"/>
+        <path id="Vector_4" d="M40.8535 17.1146V4.96875" stroke="#A4B4CB" stroke-width="1.5" stroke-linecap="round"/>
+        <path id="Vector_5" d="M5.89648 41.8478L16.7836 34.5382C18.5282 33.3678 21.0457 33.5003 22.6136 34.8474L23.3423 35.4878C25.0648 36.9674 27.8473 36.9674 29.5698 35.4878L38.7565 27.6041C40.479 26.1245 43.2615 26.1245 44.984 27.6041L48.5836 30.6957" stroke="#A4B4CB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+    </g>
+  </svg>
+</svg>

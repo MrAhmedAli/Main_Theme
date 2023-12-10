@@ -1,0 +1,427 @@
+/**** Variables ****/
+:root {
+  --body-font: "Poppins", sans-serif;
+  --first-blue-color: #16263f;
+  --first-blue-alt-color: #0d1a2f;
+  --second-blue-color: #3ac2cb;
+  --third-blue-color: #4084f4;
+  --middle-blue-color: #36415c;
+  --dark-blue-color: #040d21;
+  --lighter-blue: #202f48;
+  --light-blue-whith-opacity: rgba(164, 180, 203, 0.1);
+  --dark-blue-with-opcity: rgba(22, 38, 63, 0.8);
+  --light-blue-shadow: rgba(164, 180, 203, 0.05);
+  --dark-chat-color: #122139;
+  --red-color: #f12e67;
+  --dark-red-color: #cd1717;
+  --red-color-bg: rgba(241, 46, 103, 30%);
+  --orange-color: #fe9518;
+  --first-orange-opacity: rgba(254, 149, 24, 0.5);
+  --second-orange-opacity: rgba(254, 149, 24, 30%);
+  --green-color: #34b53a;
+  --first-green-opacity: rgba(52, 181, 58, 0.5);
+  --second-green-opacity: rgba(51, 181, 58, 30%);
+  --white-color: #fafafa;
+  --second-white: #edf2f4;
+  --shadow-color: rgb(58 194 203 / 30%);
+  --border: 1px solid rgb(164 180 203 / 50%);
+  --border-alt: 0.969px solid #546076;
+  --border-color: rgba(164, 180, 203, 0.5);
+  --placeholder: #546076;
+  --light-gray: #a4b4cb;
+  --second-gray: #959595;
+  --third-gray: #ccc;
+  --yellow: #e8c842;
+  --btn-text: #fff;
+  --light-brown: #a89e75;
+  --dark-brown-opacity: rgba(216, 85, 58, 0.5);
+  --dark-input-color: #0e1e44;
+  --shadow-color-sm: rgb(58 194 203 / 10%);
+  --second-dark-with-opacity: rgba(13, 26, 47, 0.5);
+  --box-shadow: 0px 1.7952675819396973px 3.051954746246338px 0px
+      rgba(41, 72, 152, 0.01),
+    0px 7.8991780281066895px 6.319342136383057px 0px rgba(41, 72, 152, 0.02),
+    0px 19.38888931274414px 12.602778434753418px 0px rgba(41, 72, 152, 0.03),
+    0px 37.34156799316406px 24.702882766723633px 0px rgba(41, 72, 152, 0.03),
+    0px 62.8343620300293px 45.42027282714844px 0px rgba(41, 72, 152, 0.04),
+    0px 96.94445037841797px 77.55555725097656px 0px rgba(41, 72, 152, 0.05);
+}
+
+:root.light-mode {
+  --body-font: "Poppins", sans-serif;
+  --first-blue-color: #f5f5f5;
+  --first-blue-alt-color: #e4e2e2;
+  --second-blue-color: #3ac2cb;
+  --third-blue-color: #4084f4;
+  --middle-blue-color: #e4e2e2;
+  --dark-blue-color: #fff;
+  --lighter-blue: #202f48;
+  --light-blue-whith-opacity: rgba(164, 180, 203, 0.1);
+  --dark-blue-with-opcity: rgba(22, 38, 63, 0.8);
+  --light-blue-shadow: rgba(164, 180, 203, 0.05);
+  --dark-chat-color: #d5d9e0;
+  --bluelight-color: #5f5f5f;
+  --red-color: #f12e67;
+  --dark-red-color: #cd1717;
+  --red-color-bg: rgba(241, 46, 103, 30%);
+  --orange-color: #fe9518;
+  --first-orange-opacity: rgba(254, 149, 24, 0.5);
+  --second-orange-opacity: rgba(254, 149, 24, 30%);
+  --green-color: #34b53a;
+  --first-green-opacity: rgba(52, 181, 58, 0.5);
+  --second-green-opacity: rgba(51, 181, 58, 30%);
+  --white-color: #353535;
+  --second-white: #edf2f4;
+  --shadow-color: #e4e2e2;
+  --border: 1px solid #e4e2e2;
+  --border-alt: 1px solid #546076;
+  --border-color: rgba(164, 180, 203, 0.5);
+  --light-gray: #a4b4cb;
+  --third-gray: #ccc;
+  --second-gray: #959595;
+  --yellow: #e8c842;
+  --btn-text: #fff;
+  --light-brown: #a89e75;
+  --dark-brown-opacity: rgba(216, 85, 58, 0.5);
+  --dark-input-color: #0e1e44;
+  --shadow-color-sm: rgb(58 194 203 / 10%);
+  --second-dark-with-opacity: rgba(13, 26, 47, 0.5);
+  --box-shadow: 0px 1.7952675819396973px 3.051954746246338px 0px
+      rgba(41, 72, 152, 0.01),
+    0px 7.8991780281066895px 6.319342136383057px 0px rgba(41, 72, 152, 0.02),
+    0px 19.38888931274414px 12.602778434753418px 0px rgba(41, 72, 152, 0.03),
+    0px 37.34156799316406px 24.702882766723633px 0px rgba(41, 72, 152, 0.03),
+    0px 62.8343620300293px 45.42027282714844px 0px rgba(41, 72, 152, 0.04),
+    0px 96.94445037841797px 77.55555725097656px 0px rgba(41, 72, 152, 0.05);
+}
+
+/**** Start Global Rules ****/
+@font-face {
+  font-family: "DIN Next LT W23";
+  src: url("@/assets/fonts/din-next-lt-w23-regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  font-style: normal;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+h1 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.8;
+}
+input,
+button {
+  border: none;
+}
+button,
+input[type="submit"] {
+  cursor: pointer;
+}
+input:focus,
+select:focus {
+  outline: none;
+}
+.clickable {
+  cursor: pointer;
+}
+/*** Custome switch blue ***/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 32.083px;
+  height: 18.958px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--third-gray);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  right: 6px;
+  left: 2px;
+  bottom: 2px;
+  top: 2px;
+  background-color: var(--btn-text);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+input:checked + .slider {
+  background-color: var(--second-blue-color);
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--second-blue-color);
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(5px);
+  -ms-transform: translateX(20px);
+  transform: translateX(13px);
+}
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/*** Custome large radio button blue ***/
+.form-check-input.lg-input-radio-blue {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-color: var(--second-blue-color);
+  background: var(--dark-blue-color);
+  border-radius: 50%; /* Ensures the input appears as a circle */
+  box-shadow: none;
+}
+.form-check-input.lg-input-radio-blue:checked {
+  background-color: var(--dark-blue-color);
+}
+.form-check-input.lg-input-radio-blue:checked::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px; /* Adjust the size of the inner circle */
+  height: 20px; /* Adjust the size of the inner circle */
+  border-radius: 50%;
+  background-color: var(--second-blue-color);
+}
+/*** Custome small radio button blue ***/
+.sm-input-radio-blue{
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border: 2px solid var(--second-blue-color);
+  background: var(--first-blue-color);
+  border-radius: 50%; /* Ensures the input appears as a circle */
+  box-shadow: none;
+  }
+  .sm-input-radio-blue:checked {
+    background: var(--first-blue-color);
+    border: 2px solid var(--second-blue-color);
+    box-shadow: none;
+  }
+  .sm-input-radio-blue:checked::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 14px; /* Adjust the size of the inner circle */
+  height: 14px; /* Adjust the size of the inner circle */
+  border-radius: 50%;
+  background-color: var(--second-blue-color);
+  }
+/*** Custome big radio button white ***/
+.form-check-input.lg-input-radio-white {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-color: var(--second-blue-color);
+  background: var(--dark-blue-color);
+  border-radius: 50%;
+  box-shadow: none;
+}
+
+.form-check-input.lg-input-radio-white:checked {
+  background-color: var(--dark-blue-color);
+}
+
+.form-check-input.lg-input-radio-white:checked::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: var(--white-color);
+}
+
+/*** Custome small radio button white ***/
+.form-check-input.sm-input-radio-white {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border-color: var(--second-blue-color);
+  background: var(--dark-blue-color);
+  border-radius: 50%;
+  box-shadow: none;
+}
+
+.form-check-input.sm-input-radio-white:checked {
+  background-color: var(--dark-blue-color);
+}
+
+.form-check-input.sm-input-radio-white:checked::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--white-color);
+}
+
+/*** Custom Input ***/
+.custom-input {
+  background-color: var(--middle-blue-color);
+  border: none;
+  border-radius: 10px;
+  color: var(--white-color);
+  font-size: 16px;
+  font-weight: 400;
+}
+.custom-input:focus {
+  border: 1px solid var(--second-blue-color);
+  background: rgba(58, 194, 203, 0.1);
+}
+
+/*** Custom input search ***/
+.custom-input-search {
+  position: relative;
+  border: var(--border-alt);
+  border-radius: 10px;
+  padding-left: 64px;
+  color: var(--white-color);
+  background-color: inherit;
+  box-shadow: none;
+  background-image: url("@/assets/images/search.svg");
+  background-repeat: no-repeat;
+  background-position: 20px center;
+}
+.custom-input-search:focus {
+  border: 1px solid var(--second-blue-color);
+}
+
+/* Custom checkbox */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-right: 10px; /* Add spacing between checkbox and label */
+}
+/* Styles for the label */
+.label-text {
+  color: var(--white-color);
+  margin-left: 30px; /* Add spacing between checkbox and label */
+}
+
+/* Styles for the label container */
+.checkbox-label {
+  display: flex;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Hide default checkbox */
+.checkbox-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Style the custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  border: 2px solid var(--second-blue-color);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* When the checkbox is checked, add a blue background and the cehck mark*/
+.checkbox-label input:checked ~ .checkmark {
+  background-color: var(--second-blue-color);
+  background-image: url("@/assets/images/check-mark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.custom-modal {
+  border-radius: 20px;
+  background: var(--dark-blue-color);
+}
+
+/*** page title ***/
+.page-title {
+  color: var(--white-color);
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+/*** frequently used padding and raduis ***/
+.rad-5 {
+  border-radius: 5px;
+}
+.rad-10 {
+  border-radius: 10px;
+}
+.rad-12 {
+  border-radius: 12px;
+}
+.rad-20 {
+  border-radius: 20px;
+}
+.top-rad-20 {
+  border-radius: 20px 20px 0px 0px;
+}
+.pad-20 {
+  padding: 20px;
+}
+.pad-25 {
+  padding: 25px;
+}
